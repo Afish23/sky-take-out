@@ -137,7 +137,7 @@ public class EmployeeController {
     @ApiOperation("编辑员工信息")
     public Result update(@RequestBody EmployeeDTO employeeDTO){
         log.info("编辑员工信息：{}",employeeDTO);
-        employeeService.update(employeeDTO);
+                                         employeeService.update(employeeDTO);
         return Result.success();
     }
 }
